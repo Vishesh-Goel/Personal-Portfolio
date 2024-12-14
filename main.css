@@ -104,7 +104,7 @@ body {
     box-shadow: inset 10px 2px 30px 2px #03e9f4;
     &:hover {
         svg{
-            transform: translateX(22vw) translateY(26vh);
+            transform: translateX(12vw) translateY(10vh);
             transition: transform 0.7s ease-in;
         }
     }
