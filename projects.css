@@ -1,0 +1,111 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+:root{
+    --light-color: rgb(205, 221, 228);
+    --dark-color: rgb(2, 30, 60);
+}
+
+body {
+    background: var(--dark-color);
+    background: linear-gradient(135deg, rgb(27, 68, 76) 0%, rgb(2, 7, 27) 78%) fixed;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS'; 
+}
+
+
+
+@media only screen and (min-width: 400px) and (max-width: 550px){
+    #projects {margin: 5vh 6vw;}
+    .card {width: 80%;}
+    .proj-img{width: 90%;}
+    .proj-title{font-size: 90%;}
+    .proj-desc{font-size: 90%;}
+    h4 {font-size: 15px;}
+}
+
+@media only screen and (min-width: 230px) and (max-width: 400px){
+    #projects {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        overflow-x: scroll;
+    }
+    .card {padding: 6px;}
+    .proj-img {height: 13vh;}
+    h4 {font-size: 10px;}
+}
+
+@media only screen and (max-width: 230px){
+    #projects{
+        overflow-x: scroll;
+
+    }
+    .card {height: 25vh;}
+    #projects div:nth-child(2) .proj-img {height: 10vh;}
+    .proj-link{height: 10vh;}
+    .proj-link a {display: inline-block; height: 1vh; width: 10vw; padding: 1px;}
+    h4 {font-size: 9px;}
+}
+
+
+
+
+
+h4 {color: var(--light-color);}
+
+#projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10vh;
+    column-gap: 8vw;
+    margin: 5vh 8vw;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    border-radius: 10px;
+    box-shadow: 10px 9px 9px grey;
+    padding: 10px;
+    &:hover{
+        transform: rotateY(-25deg) skewx(5deg);
+        transition: transform .5s ease-in-out;
+    }
+}
+
+.proj-img{
+    height: 20vh;
+    width: 20vw;
+    border: 1px solid;
+}
+
+.proj-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.proj-title{
+    font-size: 2vw;
+}
+.proj-desc{
+    font-size: 1.4vw;
+}
+.proj-link a{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-size: 1.4vw;
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.proj-link:hover{
+    transform: scale(0.94);
+    transition: transform 0.4s ease;
+}

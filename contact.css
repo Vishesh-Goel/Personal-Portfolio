@@ -1,0 +1,128 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+:root{
+    --light-color: rgb(205, 221, 228);
+    --dark-color: rgb(2, 30, 60);
+}
+
+body {
+    background: var(--dark-color);
+    background: linear-gradient(135deg, rgb(27, 68, 76) 0%, rgb(2, 7, 27) 78%) fixed;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS'; 
+}
+
+
+
+@media only screen and (min-width: 460px) and (max-width: 560px){
+    #my-details {margin-top: 30px; gap: 6vw;}
+    #my-details div p:nth-child(2) {font-size: 13px;}
+    #my-details div p:nth-child(3) {font-size: 10px;}
+    .main h3 {font-size: 16px;}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 460px){
+    #contact-form h3 {font-size: 14px;}
+    #contact-form form input {height: 1vh;}
+    #contact-form form textarea {height: 5vh;}
+    #contact-form form button {font-size: 10px; height: 8vh; width: 14vw;}
+    #my-details {margin-top: 20px; gap: 4vw;}
+    #my-details div p:nth-child(2) {font-size: 11px;}
+    #my-details div p:nth-child(3) {font-size: 8px;}
+    .main h3 {font-size: 13px;}
+}
+
+@media only screen and (min-width: 190px) and (max-width: 300px){
+    #contact-form h3 {font-size: 10px;}
+    #contact-form form {margin: 10px 22px;}
+    #contact-form form input {height: 0.1vh; font-size: 8px;}
+    #contact-form form textarea {height: 3vh; font-size: 8px;}
+    #contact-form form button {font-size: 8px; height: 7vh; width: 15vw;}
+    #my-details {margin-top: 10px; gap: 2vw;}
+    #my-details div p:nth-child(2) {font-size: 8px;}
+    #my-details div p:nth-child(3) {font-size: 4px;}
+    #my-details svg{height: 16px; width: 16px;}
+    #my-details img{height: 14px; width: 14px;}
+    .main h3 {font-size: 10px;}
+}
+
+@media only screen and (max-width: 190px){
+    #contact-form h3 {font-size: 8px;}
+    #contact-form form {margin: 10px 12px;}
+    #contact-form form input {height: 0.1vh; font-size: 6px;}
+    #contact-form form textarea {height: 2vh; font-size: 6px;}
+    #contact-form form button {font-size: 6px; height: 5vh; width: 22vw;}
+    #my-details {margin-top: 10px; gap: 1vw;}
+    #my-details div p:nth-child(2) {font-size: 6px;}
+    #my-details div p:nth-child(3) {font-size: 3px;}
+    #my-details svg{height: 10px; width: 10px;}
+    #my-details img{height: 8px; width: 8px;}
+    .main h3 {font-size: 8px;}
+}
+
+
+
+
+
+#contact-form {
+    margin-bottom: 80px;
+}
+
+h3{
+    color: var(--light-color);
+    font-size: 20px;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 40px;
+}
+form input, form textarea{
+    border: 0;
+    border-radius: 6px;
+    font-size: 10px;
+    padding: 13px;
+    margin: 15px 0;
+    outline: none;
+    background: var(--light-color);
+    
+}
+
+form button{
+    margin-top: 40px;
+    height: 11vh;
+    width: 15vw;
+    align-self: center;
+    background-color: #03e9f4;
+    border-radius: 10px;
+    &:hover{
+        transform: scale(0.94);
+        background-color: #11a0ba;
+        transition: transform 0.4s ease-out, background-color 0.4s ease-out;
+    }
+}
+
+#my-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8vw;
+    font-size: 13px;
+    margin-top: 40px;
+}
+
+#my-details div p:nth-child(2){
+    color: #03e9f4;
+}
+#my-details div p:nth-child(3){
+    color: var(--light-color);
+}
+#my-details img{
+    height: 24px;
+    width: 24px;
+}

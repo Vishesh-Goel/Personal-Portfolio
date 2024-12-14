@@ -1,0 +1,203 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+:root{
+    --light-color: rgb(205, 221, 228);
+    --dark-color: rgb(2, 30, 60);
+}
+
+body {
+    background: var(--dark-color);
+    background: linear-gradient(135deg, rgb(27, 68, 76) 0%, rgb(2, 7, 27) 78%) fixed;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS'; 
+}
+
+
+
+
+@media only screen and  (min-width: 564px) and (max-width: 745px){
+    .main .hero .intro-section p:nth-child(1) {font-size: 30px;}
+    .main .hero .intro-section p:nth-child(2) {font-size: 40px; text-wrap-mode: nowrap;}
+    .main .hero .intro-section #type-animation {font-size: 25px;}
+    .main .hero .img-section {height: 48vh;}
+    .main .hero .intro-section {height: 48vh;}
+    .main .hero .intro-section .contact-btn {height: 13px; width: 55px; font-size: 8px;}
+    .main #about-me {margin: 65px 50px;}
+    .main #about-me h1 {font-size: 30px;}
+    .main #about-me p {font-size: 12px;}
+    .main #about-me ul {font-size: 9px; left: -10px; line-height: 20px;}
+}
+
+@media only screen and  (min-width: 430px) and (max-width: 564px){
+    .main .hero .intro-section p:nth-child(1) {font-size: 20px;}
+    .main .hero .intro-section p:nth-child(2) {font-size: 32px; text-wrap-mode: nowrap;}
+    .main .hero .intro-section p:nth-child(3) {font-size: 16px;}
+    .main .hero .img-section {height: 40vh;}
+    .main .hero .intro-section {height: 40vh;}
+    .main .hero .intro-section .contact-btn {height: 11px; width: 45px; font-size: 7px;}
+    .main #about-me {margin: 60px 40px;}
+    .main #about-me h1 {font-size: 25px;}
+    .main #about-me p {font-size: 10px;}
+    .main #about-me ul {font-size: 7px; left: -25px; line-height: 15px;}
+}
+
+@media only screen and  (min-width: 250px) and (max-width: 430px){
+    .main .hero .intro-section p:nth-child(1) {font-size: 13px;}
+    .main .hero .intro-section p:nth-child(2) {font-size: 18px; text-wrap-mode: nowrap;}
+    .main .hero .intro-section p:nth-child(3) {font-size: 10px;}
+    .main .hero .img-section {height: 30vh;}
+    .main .hero .intro-section {height: 30vh;}
+    .main .hero .intro-section .contact-btn {height: 5px; width: 30px; font-size: 5px; top: -10%;}
+    .main #about-me {margin: 55px 25px;}
+    .main #about-me h1 {font-size: 18px;}
+    .main #about-me p {font-size: 8px; line-height: 14px;}
+    .main #about-me ul {font-size: 6px; left: -30px; line-height: 10px;}
+}
+
+@media only screen and  (min-width: 200px) and (max-width: 250px){
+    .main .hero .intro-section p:nth-child(1) {font-size: 10px;}
+    .main .hero .intro-section p:nth-child(2) {font-size: 15px; text-wrap-mode: nowrap;}
+    .main .hero .intro-section p:nth-child(3) {font-size: 7px;}
+    .main .hero .img-section {height: 25vh;}
+    .main .hero .intro-section {height: 25vh;}
+    .main .hero .intro-section .contact-btn {height: 1px; width: 20px ; font-size: 5px; top: -16%;}
+    .main #about-me {margin: 45px 15px;}
+    .main #about-me h1 {font-size: 15px;}
+    .main #about-me p {font-size: 7px; line-height: 10px}
+    .main #about-me ul {font-size: 6px; left: -35px; line-height: 9px;}
+}
+
+@media only screen and  (min-width: 100px) and (max-width: 200px){
+    .main .hero .intro-section p:nth-child(1) {font-size: 7px;}
+    .main .hero .intro-section p:nth-child(2) {font-size: 9px; text-wrap-mode: nowrap;}
+    .main .hero .intro-section p:nth-child(3) {font-size: 5px;}
+    .main .hero .img-section {height: 15vh;}
+    .main .hero .intro-section {height: 15vh;}
+    .main .hero .intro-section .contact-btn {height: 0px; width: 15px; font-size: 4px; top: -20%;}
+    .main #about-me {margin: 35px 10px;}
+    .main #about-me h1 {font-size: 10px;}
+    .main #about-me p {font-size: 6px; line-height: 7px}
+    .main #about-me ul {font-size: 6px; left: -40px; line-height: 8px;}
+}
+
+
+
+
+
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    gap: 20px;
+}
+
+.img-section{
+    height: 58vh;
+    width: 35vw;
+    border-radius: 10px;
+    box-shadow: inset 10px 2px 30px 2px #03e9f4;
+    &:hover {
+        svg{
+            transform: translateX(21vw) translateY(30vh);
+            transition: transform 0.7s ease-in;
+        }
+    }
+}
+
+.img-section svg{
+    position: absolute;
+    opacity: 0.7;
+}
+
+.img-section img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    &:hover{
+        transform: translateY(-3vh);
+        transition: transform 0.7s ease-in;
+    }
+}
+
+.intro-section{
+    height: 58vh;
+    width: 35vw;
+    color: var(--light-color);
+    line-height: 7px;
+}
+.intro-section p:first-child{
+    position: relative;
+    font-size: 34px;
+    font-weight: 700;
+}
+.intro-section p:nth-child(2){
+    font-size: 44px;
+    font-weight: 700;
+    color: #03e9f4;
+}
+.intro-section p:nth-child(3){
+    font-size: 10px;
+}
+
+.contact-btn{
+    display: inline-block;
+    align-content: center;
+    position: relative;
+    left: 35%;
+    height: 15px;
+    width: 60px;
+    padding: 10px 3px;
+    margin: 10px 0;
+    border: 1px solid #03e9f4;
+    color: #03e9f4;
+    text-decoration: none;
+    font-size: 10px;
+    transition: 0.5s;
+    -webkit-box-reflect: below -2px linear-gradient(transparent, #0005);
+}
+
+.contact-btn:hover{
+    background: #03e9f4;
+    color: black;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+}
+
+#about-me{
+    margin: 70px 60px;
+}
+#about-me h1{
+    color: #03e9f4;
+    text-decoration: underline;
+
+}
+#about-me p{
+    color: var(--light-color);
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+#about-me ul{
+    list-style: none;
+    color: #03e9f4;
+    font-size: 10px;
+    line-height: 30px;
+    position: relative;
+    left: -4px;
+}
+
+#about-me ul span{
+    color: var(--light-color);
+}

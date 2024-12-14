@@ -1,0 +1,144 @@
+/*This css file contains the styling and media queries of the navbar, theme button, and the footer of all the webpages.
+I created it separately because these 3 things are common in all the html pages...*/
+
+
+/* styling of navbar */
+nav {
+    height: 10vh;
+    width: 100%;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    display: flex;
+    position: sticky;
+    justify-content: space-around;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-tabs a{
+    list-style: none;
+    color: var(--dark-color);
+    font-size: 12px;
+    text-decoration: none;
+    height: 16px;
+    width: 70px;
+    outline: none;
+    text-align: center;
+    &:hover{
+        background-color: #b0d4d9;
+        border-bottom: 2px solid #118099;
+        transform: translateY(-0.5vh);
+        transition: background-color .5s ease-in, transform .5s ease-in;
+    }
+}
+
+/* styling of theme button  */
+.theme{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.theme > button{
+    font-size: 9px;
+    border: none;
+    height: 20px;
+    width: 7rem;
+    border-radius: 15px;
+    font-weight: 600;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+/* styling of footer  */
+footer{
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 3px 0;
+    color: var(--light-color);
+}
+
+
+
+/* media queries of nav-bar */
+@media only screen and (min-width: 515px) and (max-width: 750px){
+    .nav-head{font-size: 12px;}
+    .nav-tabs a{font-size: 11px; width: 50px;}
+    .nav-tabs {gap: 10px;}
+}
+@media only screen and (min-width: 400px) and (max-width: 515px){
+    .nav-head{font-size: 10px;}
+    .nav-tabs a{font-size: 8px; width: 40px;}
+    .nav-tabs {gap: 8px;}
+}
+@media only screen and (min-width: 250px) and (max-width: 400px){
+    .nav-head{font-size: 9px;}
+    .nav-tabs a{font-size: 7px; width: 30px;}
+    .nav-tabs {gap: 8px;}
+}
+@media only screen and (min-width: 174px) and (max-width: 250px){
+    .nav-head{font-size: 9px; width: 30px;}
+    .nav-tabs a{font-size: 7px; width: 22px;}
+    .nav-tabs {
+        gap: 7px;
+        position: relative;
+        left: -10px;
+    }
+}
+@media only screen and (min-width: 148px) and (max-width: 174px){
+    .nav-head{font-size: 8px;}
+    .nav-tabs a{font-size: 6px; width: 16px;}
+    .nav-tabs {
+        gap: 8px;
+        position: relative;
+        left: -15px;
+    }
+}
+@media only screen and (min-width: 148px) and (max-width: 174px){
+    .nav-head{font-size: 8px;}
+    .nav-tabs a{font-size: 6px; width: 16px;}
+    .nav-tabs {
+        gap: 8px;
+        position: relative;
+        left: -15px;
+    }
+}
+@media only screen and (max-width: 148px){
+    nav {height: 7vh;}
+    .nav-head{font-size: 7px;}
+    .nav-tabs a{font-size: 5px; width: 15px; align-self: flex-start;}
+    .nav-tabs {
+        gap: 8px;
+        align-items: flex-start;
+        position: relative;
+        left: -25px;
+    }
+}
+
+
+/* media queries for the theme button and the footer for all html pages */
+@media only screen and (min-width: 564px) and (max-width: 745px){
+    .theme button {height: 17px; width: 6rem;}
+    .theme .dark-theme {font-size: 8px;}
+    footer {font-size: 8px; letter-spacing: 1px;}
+}
+@media only screen and (min-width: 430px) and (max-width: 564px){
+    .theme button {height: 15px; width: 5rem;}
+    .theme .dark-theme {font-size: 7px;}
+    footer {font-size: 7px; letter-spacing: 1px;}
+}
+@media only screen and (min-width: 250px) and (max-width: 430px){
+    .theme button { height: 12px; width: 3rem;}
+    .theme .dark-theme {font-size: 5px;}
+    footer {font-size: 6px; letter-spacing: 1px;}
+}
+@media only screen and (max-width: 250px){
+    .theme button { height: 8px; width: 2.5rem;}
+    .theme .dark-theme {font-size: 3px;}
+    footer {font-size: 5px; letter-spacing: 1px;}
+}
