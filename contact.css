@@ -29,7 +29,7 @@ body {
     #contact-form h3 {font-size: 14px;}
     #contact-form form input {height: 1vh;}
     #contact-form form textarea {height: 5vh;}
-    #contact-form form button {font-size: 10px; height: 8vh; width: 14vw;}
+    #contact-form form button {font-size: 10px; height: 7vh; width: 10vw;}
     #my-details {margin-top: 20px; gap: 4vw;}
     #my-details div p:nth-child(2) {font-size: 11px;}
     #my-details div p:nth-child(3) {font-size: 8px;}
@@ -41,7 +41,7 @@ body {
     #contact-form form {margin: 10px 22px;}
     #contact-form form input {height: 0.1vh; font-size: 8px;}
     #contact-form form textarea {height: 3vh; font-size: 8px;}
-    #contact-form form button {font-size: 8px; height: 7vh; width: 15vw;}
+    #contact-form form button {font-size: 8px; height: 5vh; width: 7vw;}
     #my-details {margin-top: 10px; gap: 2vw;}
     #my-details div p:nth-child(2) {font-size: 8px;}
     #my-details div p:nth-child(3) {font-size: 4px;}
@@ -55,7 +55,7 @@ body {
     #contact-form form {margin: 10px 12px;}
     #contact-form form input {height: 0.1vh; font-size: 6px;}
     #contact-form form textarea {height: 2vh; font-size: 6px;}
-    #contact-form form button {font-size: 6px; height: 5vh; width: 22vw;}
+    #contact-form form button {font-size: 6px; height: 4vh; width: 6vw;}
     #my-details {margin-top: 10px; gap: 1vw;}
     #my-details div p:nth-child(2) {font-size: 6px;}
     #my-details div p:nth-child(3) {font-size: 3px;}
@@ -95,8 +95,8 @@ form input, form textarea{
 
 form button{
     margin-top: 40px;
-    height: 11vh;
-    width: 15vw;
+    height: 8vh;
+    width: 12vw;
     align-self: center;
     background-color: #03e9f4;
     border-radius: 10px;
