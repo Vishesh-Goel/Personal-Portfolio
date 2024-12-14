@@ -22,7 +22,7 @@ nav ul {
 .nav-tabs a{
     list-style: none;
     color: var(--dark-color);
-    font-size: 12px;
+    font-size: 20px;
     text-decoration: none;
     height: 16px;
     width: 70px;
@@ -67,23 +67,23 @@ footer{
 
 /* media queries of nav-bar */
 @media only screen and (min-width: 515px) and (max-width: 750px){
-    .nav-head{font-size: 12px;}
-    .nav-tabs a{font-size: 11px; width: 50px;}
+    .nav-head{font-size: 18px;}
+    .nav-tabs a{font-size: 18px; width: 50px;}
     .nav-tabs {gap: 10px;}
 }
 @media only screen and (min-width: 400px) and (max-width: 515px){
-    .nav-head{font-size: 10px;}
-    .nav-tabs a{font-size: 8px; width: 40px;}
+    .nav-head{font-size: 16px;}
+    .nav-tabs a{font-size: 16px; width: 40px;}
     .nav-tabs {gap: 8px;}
 }
 @media only screen and (min-width: 250px) and (max-width: 400px){
-    .nav-head{font-size: 9px;}
-    .nav-tabs a{font-size: 7px; width: 30px;}
+    .nav-head{font-size: 14px;}
+    .nav-tabs a{font-size: 13px; width: 30px;}
     .nav-tabs {gap: 8px;}
 }
 @media only screen and (min-width: 174px) and (max-width: 250px){
-    .nav-head{font-size: 9px; width: 30px;}
-    .nav-tabs a{font-size: 7px; width: 22px;}
+    .nav-head{font-size:11px; width: 30px;}
+    .nav-tabs a{font-size: 10px; width: 22px;}
     .nav-tabs {
         gap: 7px;
         position: relative;
@@ -91,8 +91,8 @@ footer{
     }
 }
 @media only screen and (min-width: 148px) and (max-width: 174px){
-    .nav-head{font-size: 8px;}
-    .nav-tabs a{font-size: 6px; width: 16px;}
+    .nav-head{font-size: 10px;}
+    .nav-tabs a{font-size: 9px; width: 16px;}
     .nav-tabs {
         gap: 8px;
         position: relative;
@@ -101,7 +101,7 @@ footer{
 }
 @media only screen and (min-width: 148px) and (max-width: 174px){
     .nav-head{font-size: 8px;}
-    .nav-tabs a{font-size: 6px; width: 16px;}
+    .nav-tabs a{font-size: 7px; width: 16px;}
     .nav-tabs {
         gap: 8px;
         position: relative;
